@@ -10,7 +10,7 @@ tags:
   - Gráfico
   - Biólogo
 ---
-#Aquí se muestra una forma muy fácil de hacer un gráfico en R con ggplot2
+#Salario de un biólogo en función del sexo
 
 ```{r}
 library(tidyverse)
@@ -22,9 +22,7 @@ ggplot(Encuesta,aes(x=factor(SEX),y=SALa)) + geom_boxplot(aes(fill=SEX),
   scale_y_continuous(limits = c(0,2000))+
   scale_fill_manual(values = c("lightblue","blue2"))
 ```
-```{r}
 
-```
 
 
 
