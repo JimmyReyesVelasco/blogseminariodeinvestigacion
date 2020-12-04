@@ -1,5 +1,5 @@
 ---
-title: Gráfico
+title: Salario vs sexo
 author: Jimmy Reyes
 date: '2020-12-04'
 slug: gráfico
@@ -14,8 +14,20 @@ tags:
 
 ```{r}
 library(tidyverse)
-data("iris")
-ggplot(iris, aes(x=Sepal.Width,y=Sepal.Length))+geom_point(aes(color=Species))+
-  labs(x="Ancho del petalo",y="Largo del sepalo") + geom_smooth(method = lm,formula = y~x, aes(color=Species))
+ggplot(Encuesta,aes(x=factor(SEX),y=SALa)) + geom_boxplot(aes(fill=SEX),
+                                                          outlier.alpha = 0,
+                                                          show.legend = F)+
+  labs(x="", y="Salario (USD)", title = "Salario de biólogos")+
+  scale_x_discrete(labels=c("Masculino","Femenino"))+
+  scale_y_continuous(limits = c(0,2000))+
+  scale_fill_manual(values = c("lightblue","blue2"))
 ```
+```{r}
+
+```
+
+
+
+
+
 
