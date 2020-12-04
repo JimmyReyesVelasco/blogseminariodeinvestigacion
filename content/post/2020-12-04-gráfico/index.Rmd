@@ -15,6 +15,7 @@ tags:
 ```{r}
 library(tidyverse)
 data("iris")
-ggplot(iris, aes(x=Sepal.Width,y=Sepal.Length))+geom_point(aes(color=Species))
+ggplot(iris, aes(x=Sepal.Width,y=Sepal.Length))+geom_point(aes(color=Species))+
+  labs(x="Ancho del petalo",y="Largo del sepalo") + geom_smooth(method = lm,formula = y~x, aes(color=Species))
 ```
 

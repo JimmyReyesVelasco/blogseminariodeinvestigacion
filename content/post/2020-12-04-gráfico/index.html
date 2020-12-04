@@ -28,5 +28,6 @@ tags:
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()</code></pre>
 <pre class="r"><code>data(&quot;iris&quot;)
-ggplot(iris, aes(x=Sepal.Width,y=Sepal.Length))+geom_point(aes(color=Species))</code></pre>
+ggplot(iris, aes(x=Sepal.Width,y=Sepal.Length))+geom_point(aes(color=Species))+
+  labs(x=&quot;Ancho del petalo&quot;,y=&quot;Largo del sepalo&quot;) + geom_smooth(method = lm,formula = y~x, aes(color=Species))</code></pre>
 <p><img src="index_files/figure-html/unnamed-chunk-1-1.png" width="672" /></p>
