@@ -10,11 +10,11 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
     post = "/:year/:month/:day/:slug/"
 
 [[menu.main]]
-    name = "Autor"
+    name = "About"
     url = "/about/"
 [[menu.main]]
     name = "GitHub"
-    url = "https://github.com/JimmyReyesVelasco/blogseminariodeinvestigacion"
+    url = "https://github.com/rstudio/blogdown"
 [[menu.main]]
     name = "Twitter"
     url = "https://twitter.com/rstudio"
@@ -35,7 +35,7 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "_cache$", "\\.knit\\.md$", "\\.utf8\
     favicon = "favicon.ico"
 
     [params.logo]
-    url = "Biología.png"
+    url = "logo.png"
     width = 50
     height = 50
     alt = "Logo"

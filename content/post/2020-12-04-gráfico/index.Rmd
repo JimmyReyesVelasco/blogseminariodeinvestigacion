@@ -1,0 +1,20 @@
+---
+title: Gráfico
+author: Jimmy Reyes
+date: '2020-12-04'
+slug: gráfico
+categories:
+  - R
+tags:
+  - Biología
+  - Gráfico
+  - Biólogo
+---
+#Aquí se muestra una forma muy fácil de hacer un gráfico en R con ggplot2
+
+```{r}
+library(tidyverse)
+data("iris")
+ggplot(iris, aes(x=Sepal.Width,y=Sepal.Length))+geom_point(aes(color=Species))
+```
+
